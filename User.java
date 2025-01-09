@@ -138,8 +138,10 @@ public class User {
     private int FolloweIndex(String name) {
         int FolloweIndex = -1;
         for (int i = 0; i < this.follows.length; i++) {
-            if (this.follows[i].equals(name)) {
-                FolloweIndex = i;
+            if (!(this.follows[i] == null)) {
+                if (this.follows[i].equals(name)) {
+                    FolloweIndex = i;
+                }
             }
         }
         return FolloweIndex;
