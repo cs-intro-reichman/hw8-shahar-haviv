@@ -23,6 +23,7 @@ public class UserTest {
 
         System.out.println("\n...Trying to add Ben again...");
         alex.addFollowee("Ben");    
+        System.out.println(alex);
 
         System.out.println("\n...Trying to add Or, Zohar, Dror, Josh, Idan, Uri, Maya, and Dan to Alex...");
         alex.addFollowee("Or");
@@ -35,11 +36,13 @@ public class UserTest {
         alex.addFollowee("Dan"); // Exceeds the array limit           
         System.out.println(alex);
 
-        System.out.println("\n...Removing Neta...");
-        alex.removeFollowee("Neta");
+        // System.out.println("\n...Removing Neta...");
+        // alex.removeFollowee("Neta");
+        // System.out.println(alex);
 
-        System.out.println("\n...Trying to remove Liam...");
-        alex.removeFollowee("Liam");
+
+        System.out.println("\n...Trying to remove Maya...");
+        alex.removeFollowee("Maya");
 
         System.out.println(alex);
 
@@ -59,7 +62,7 @@ public class UserTest {
         System.out.println("The number of users that both Alex and Orly follow: " + alex.countMutual(orly));
         System.out.println("The number of users that both Orly and Alex follow: " + orly.countMutual(alex));
 
-        // Tests the isFriend method
+        // // Tests the isFriend method
         System.out.println("\n...Checking if Alex and Orly are friends...");
         System.out.println("Alex is a friend of Orly: " + alex.isFriendOf(orly));
         System.out.println("Orly is a friend of Alex: " + orly.isFriendOf(alex));
